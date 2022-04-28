@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1> Virtual Bazaar </h1>
+</head>
+<style>
+</style>
+<p>Welcome to the Virtual Bazaar! Here we sell Shoes, Helicopters and Fire. </p>
+
+<br><br><br>
+
+<div class="a">
+<img src="shoes.jpg" alt="Shoes" style="width:200px; height:100px;">
+<img src="helicopter.jpg" alt="Helicopter" style="width:200px; height:100px;">
+<img src="fire.jpg" alt="Fire" style="width:200px; height:100px;">
+<br><br><br>
+
+
+<form action="store.php" method="post" id = "store">
+ <b>Login:</b><br>
+ Email: <input type="email" name="email"><br> 
+ Password: <input type="text" name="password"><br> 
+ <p></p>
+
+
+
+ <b>Amount:</b><br>
+ Shoes ($500) <input type="number" name="number1" id = "num1" value = ""><br>
+ Helicopter ($1) <input type="number" name="number2" id = "num2" value = ""><br>
+ Ice-Cream ($100000) <input type="number" name="number3" id = "num3" value = ""><br>
+ <p></p>
+
+
+
+
+ <b>Shipping and Handling:</b><br>
+  <input type="radio" id="option1" name="options" value="7 Days">
+  <label for="option1">Free 7 Day</label><br>
+  <div class="clear"></div>
+  <input type="radio" id="option2" name="options" value="Overnight">
+  <label for="option2">$50 Overnight</label><br>  
+  <div class="clear"></div>
+  <input type="radio" id="option3" name="options" value="3-Day">
+  <label for="option3">$5 3-Day</label><br><br>
+  <div class="clear"></div>
+ <input type="submit" onclick = "Submit()" value = "Submit">
+  <input type="reset" onclick="Reset()" value="Reset">
+</form>
+</div>
+
+
+
+
+<script>
+function Submit() {
+var num = parseInt(document.getElementById('num1').value);
+var num2 = parseInt(document.getElementById('num2').value);
+var num3 = parseInt(document.getElementById('num3').value);
+  if (num < 0 || num2 < 0 || num3 < 0)
+  {
+    alert("Quantity is negative! So, you will receieve an empty receipt. Try again!");
+    document.getElementById("store").reset();
+  } 
+  else if (num >= 0 || num2 >= 0 || num3 >= 0)
+  { 
+    alert("Thank you for choosing the Virtual Bazaar! You will recieve your receipt!");
+    document.getElementById("store").submit();
+  }
+}
+function Reset() {
+  document.getElementById("store").reset();
+}
+</script>
+</html>

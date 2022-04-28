@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <h1> Quiz </h1>
+</head>
+<body>
+<p>This quiz is designed to test students, who know the basic concepts of Calculus 1. Answer the 5 basic questions, submit your answers, and check your answers. You can reset the form if you are not okay with your selected answers.</p>
+<form action="quiz.php" method="post" id = "quiz">
+ <div id="quizform">
+                
+                    <h3>What is KU's Mascot?</h3>
+                    <div>
+                        <input type="radio" name="q1" id="q1-A" value="Jayhawk" />
+                        <label for="q1-A">Jayhawk </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" id="q1-B" value="Water Buffalo" />
+                        <label for="q1-B">Water Buffalo</label>
+                    </div>                   
+                    <div>
+                        <input type="radio" name="q1" id="q1-C" value="Snail" />
+                        <label for="q1-C">Snail</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q1" id="q1-D" value="Cat" />
+                        <label for="q1-D">Cat</label>
+                    </div>
+                    <h3>What color is the sky?</h3>    
+                    <div>
+                        <input type="radio" name="q2" id="q2-A" value="Green" />
+                        <label for="q2-A">Green</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" id="q2-B" value="Purple" />
+                        <label for="q2-B">Purple</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" id="q2-C" value="Blue" />
+                        <label for="q2-C">Blue</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q2" id="q2-D" value="Black" />
+                        <label for="q2-D">Black</label>
+                    </div>
+                    <h3>What is the largest country by area in South America?</h3>
+                    <div>
+                        <input type="radio" name="q3" id="q3-A" value="Argentina"/>
+                        <label for="q3-A">Argentina</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" id="q3-B" value="Colombia" />
+                        <label for="q3-B">Colombia</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" id="q3-C" value="Chile" />
+                        <label for="q3-C">Chile</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q3" id="q3-D" value="Brazil" />
+                        <label for="q3-D">Brazil</label>
+                    </div>
+                    <h3>What is the capital of Italy?</h3>
+                    <div>
+                        <input type="radio" name="q4" id="q4-A" value="Paris" />
+                        <label for="q4-A">Paris</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q4" id="q4-B" value="Rome" />
+                        <label for="q4-B">Rome</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q4" id="q4-C" value="Athens" />
+                        <label for="q4-C">Athens</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q4" id="q4-D" value="Denver" />
+                        <label for="q4-D">Denver</label>
+                    </div>
+                    <h3>Who is known for their contributions to Electricity?</h3>
+                    <div>
+                        <input type="radio" name="q5" id="q5-A" value="Nikola Tesla" />
+                        <label for="q5-A">Nikola Tesla</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q5" id="q5-B" value="George Washington" />
+                        <label for="q5-B">George Washington</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q5" id="q5-C" value="Cristiano Ronaldo" />
+                        <label for="q5-C">Cristiano Ronaldo</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="q5" id="q5-D" value="Ferdinand Magellan" />
+                        <label for="q5-D">Ferdinand Magellan</label>
+                    </div>     
+
+
+  <input type="button" onclick="subFunction()" value="Submit">
+  <input type="button" onclick="resFunction2()" value="Reset">
+</form>
+
+<script>
+function subFunction() {
+  document.getElementById("quiz").submit();
+}
+function resFunction2() {
+  document.getElementById("quiz").reset();
+}
+</script>
+
+</div>
+</body>
+</html>
